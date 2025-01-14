@@ -4,25 +4,57 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Host Grotesk", serif;
-    font-optical-sizing: auto;
-    font-weight: 425;
-    font-style: normal;
+
 }
 
 h1 {
     font-family: "Climate Crisis";
-    color: rgb(211, 45, 90);
-    font-size: 3em;
+    color: #aa5353;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 5em;
+    letter-spacing: 0.05em;
 }
 
+p {
+    font-family: "Host Grotesk", serif;
+    color: #737373;
+    font-weight: 425;
+    font-style: normal;
+    font-size: 2em;
+}
 ::selection {
-    background-color: aquamarine;
+    background-color: #d1fae5;
 }
 
-.links {
-    color: black;
-    border-bottom: 1px solid;
+.link-a {
+    color: #303030;
+    border-bottom: 1px solid #969696;
+    text-decoration: none;
     transition: color 0.3s;
+}
 
+.link-a:hover {
+    color: #b5a6a6;
+    border-bottom: 1px solid #b5a6a6;
+}
+
+.link-button {
+    background: none;
+    border: none;
+    color: #303030;
+    border-bottom: 1px solid #969696;
+    text-decoration: none;
+    cursor: pointer;
+    font: inherit;
+    transition: color 0.3s;
+}
+
+.link-button:hover {
+    color: #b5a6a6;
+    border-bottom: 1px solid #b5a6a6;
+}
+
+.highlighted {
+    background-color: #d1fae5;
 }
