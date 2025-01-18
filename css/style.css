@@ -4,7 +4,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
 
 h1 {
@@ -23,6 +22,7 @@ p {
     font-style: normal;
     font-size: 2em;
 }
+
 ::selection {
     background-color: #d1fae5;
 }
@@ -57,4 +57,17 @@ p {
 
 .highlighted {
     background-color: #d1fae5;
+}
+
+.hero-container {
+    position: absolute;
+    text-align: right;
+
+}
+
+@media (min-width: 768px) {
+    .hero-container {
+        top: 30%;
+        right: 20%;
+    }
 }
