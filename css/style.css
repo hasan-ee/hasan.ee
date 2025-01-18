@@ -11,7 +11,7 @@ h1 {
     color: #aa5353;
     font-weight: 100;
     font-style: normal;
-    font-size: 5em;
+    font-size: max(1rem,5em);
     letter-spacing: 0.05em;
 }
 
@@ -20,7 +20,7 @@ p {
     color: #737373;
     font-weight: 425;
     font-style: normal;
-    font-size: 2em;
+    font-size: max(0.4rem,2em);
 }
 
 ::selection {
@@ -69,5 +69,12 @@ p {
     .hero-container {
         top: 30%;
         right: 20%;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-container {
+        text-align: center;
+
     }
 }
