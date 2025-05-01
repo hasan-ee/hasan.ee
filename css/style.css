@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    line-height: 1.3;
 }
 
 h1 {
@@ -11,7 +12,7 @@ h1 {
     color: #aa5353;
     font-weight: 100;
     font-style: normal;
-    font-size: max(1rem,5em);
+    font-size: 4vw;
     letter-spacing: 0.05em;
 }
 
@@ -20,11 +21,12 @@ p {
     color: #737373;
     font-weight: 425;
     font-style: normal;
-    font-size: max(0.4rem,2em);
+    font-size: 1.5vw;
 }
 
 ::selection {
     background-color: #d1fae5;
+    color: inherit;
 }
 
 .link-a {
@@ -62,19 +64,22 @@ p {
 .hero-container {
     position: absolute;
     text-align: right;
-
+    top: 30%;
+    right: 20%;
 }
 
-@media (min-width: 768px) {
-    .hero-container {
-        top: 30%;
-        right: 20%;
-    }
-}
 
 @media (max-width: 767px) {
     .hero-container {
         text-align: center;
-
     }
+    
+    h1 {
+        font-size: 12vw;
+    }
+
+    p {
+        font-size: 3vw;
+    }
+
 }
