@@ -71,15 +71,18 @@ p {
 
 @media (max-width: 767px) {
     .hero-container {
+        position: static;
         text-align: center;
+        margin: 30vh auto 0 auto;
+        width: 90%;
     }
     
     h1 {
-        font-size: 12vw;
+        font-size: clamp(2rem, 12vw, 4.5rem);
     }
 
     p {
-        font-size: 3vw;
+        font-size: clamp(1rem, 3vw, 1.5rem);
     }
 
 }
